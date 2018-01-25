@@ -14,18 +14,20 @@
       <ul class="burger-menu__list">
         <li><a class="burger-menu__item" href="index.html">Главная</a></li>
         <li><a class="burger-menu__item" href="photo.html">Фото и видео</a></li>
-        <li><p class="burger-menu__item">Форма отзыва</p></li>
+        <li><a class="burger-menu__item">Форма отзыва</a></li>
         <li><a class="burger-menu__item" href="https://htmlacademy.ru/" target="blank">Html academy</a></li>
       </ul>
     </section>
     <section class="head-wrapper">
-      <p class="logo head-wrapper__logo"><img src="http://placehold.it/150x100" alt="заглушка">Лого</p>
+      <img class="logo head-wrapper__logo" src="http://placehold.it/150x100" alt="заглушка">
       <button class="head-wrapper__burger">Бургер</button>
     </section>
   </header>
 
   <main>
-    <article class="kv">
+    <h1 class="visualy-hidden">Оставить отзыв</h1>
+
+    <article class="key-visual">
       <img src="http://placehold.it/150x100" alt="заглушка">
     </article>
 
@@ -35,83 +37,83 @@
     </section>
 
     <section class="form-wrapper"><!-- START form-wrapper -->
-      <form action="https://echo.htmlacademy.ru" action="post">
-        <fieldset class="form-wrapper__name fieldset-name">
-          <h2>Представьтесь:</h2>
-          <label for="name">
+      <form class="form-wrapper__form main-form" action="https://echo.htmlacademy.ru" action="post">
+        <fieldset class="main-form__name fieldset-name">
+          <legend>Представьтесь:</legend>
+          <label class="fieldset-name__label" for="name">
             <p>ИМЯ<sup>*</sup>:</p>
-            <input type="text" name="name" id="name">
+            <input class="fieldset-name__input" type="text" name="name" id="name">
           </label>
-          <label for="surname">
+          <label class="fieldset-name__label" for="surname">
             <p>ФАМИЛИЯ<sup>*</sup>:</p>
-            <input type="text" name="surname" id="surname">
+            <input class="fieldset-name__input" type="text" name="surname" id="surname">
           </label>
-          <label for="patronymic">
+          <label class="fieldset-name__label" for="patronymic">
             <p>Отчество:</p>
-            <input type="text" name="patronymic" id="patronymic">
+            <input class="fieldset-name__input" type="text" name="patronymic" id="patronymic">
           </label>
         </fieldset>
 
-        <fieldset class="form-wrapper__contacts fieldset-contacts">
-          <h2>Контактная информация:</h2>
-          <label for="phone">
+        <fieldset class="main-form__contacts fieldset-contacts">
+          <legend>Контактная информация:</legend>
+          <label class="fieldset-contacts__label" for="phone">
             <p>Контактный телефон*:</p>
-            <input type="tel" name="phone" id="phone">
+            <input class="fieldset-contacts__input" type="tel" name="phone" id="phone">
           </label>
-          <label for="email">
+          <label class="fieldset-contacts__label" for="email">
             <p>Электронная почта*:</p>
-            <input type="email" name="email" id="email">
+            <input class="fieldset-contacts__input" type="email" name="email" id="email">
           </label>
         </fieldset>
 
-        <fieldset class="form-wrapper__opinion fieldset-opinion">
-          <h2>ВАше Общее впечатление:</h2>
-          <label for="opinion-plus">
-            <input type="radio" name="opinion" id="opinion-plus" value="opinion" checked>
+        <fieldset class="main-form__opinion fieldset-opinion">
+          <legend>ВАше Общее впечатление:</legend>
+          <label class="fieldset-opinion__label" for="opinion-plus">
+            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-plus" value="opinion" checked>
             <p>Скорее положительное</p>
           </label>
-          <label for="opinion-menus">
-            <input type="radio" name="opinion" id="opinion-menus" value="opinion">
+          <label class="fieldset-opinion__label" for="opinion-menus">
+            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-menus" value="opinion">
             <p>Скорее отрицательное</p>
           </label>
-          <label for="opinion-soso">
-            <input type="radio" name="opinion" id="opinion-soso" value="opinion">
+          <label class="fieldset-opinion__label" for="opinion-soso">
+            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-soso" value="opinion">
             <p>Затрудняюсь ответить</p>
           </label>
         </fieldset>
 
-        <fieldset class="form-wrapper__visit fieldset-visit">
-          <h2>посещенные достопримечательности:</h2>
-          <label for="visit-bridge">
-            <input type="checkbox" name="visit" id="visit-bridge" value="bridge">
+        <fieldset class="main-form__visit fieldset-visit">
+          <legend>посещенные достопримечательности:</legend>
+          <label class="fieldset-visit__label" for="visit-bridge">
+            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-bridge" value="bridge">
             <p>Мост Дьявола</p>
           </label>
-          <label for="visit-park">
-            <input type="checkbox" name="visit" id="visit-park" value="park">
+          <label class="fieldset-visit__label" for="visit-park">
+            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-park" value="park">
             <p>Слайд-парк</p>
           </label>
-          <label for="visit-mountain">
-            <input type="checkbox" name="visit" id="visit-mountain" value="mountain">
+          <label class="fieldset-visit__label" for="visit-mountain">
+            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-mountain" value="mountain">
             <p>Гора-Колокол</p>
           </label>
-          <label for="visit-rock">
-            <input type="checkbox" name="visit" id="visit-rock" value="rock">
+          <label class="fieldset-visit__label" for="visit-rock">
+            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-rock" value="rock">
             <p>Красные скалы</p>
           </label>
         </fieldset>
 
-        <fieldset class="form-wrapper__emotions fieldset-emotions">
-          <h2>Опишите свои эмоции:</h2>
-          <textarea name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="main-form__emotions fieldset-emotions">
+          <legend class="fieldset-emotions__label">Опишите свои эмоции:</legend>
+          <textarea class="fieldset-emotions__input" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <button class="form-wrapper__submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="main-form__submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
-    </section><!-- START form-wrapper -->
+    </section><!-- END form-wrapper -->
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <h2 class="footer__hashtag"><a href="#">#visitSEDONA</a></h2>
 
     <ul class="footer__social social">
@@ -120,7 +122,7 @@
       <li class="social__item"><a href=""></a></li>
     </ul>
 
-    <p class="footer__copyright">Разработано</p>
+    <a class="footer__copyright" href="https://htmlacademy.ru/" target="blank">Разработано</a>
   </footer>
 
 </body>

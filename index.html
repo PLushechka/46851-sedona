@@ -12,20 +12,22 @@
     <section class="burger-menu">
       <button class="burger-menu__close">закрыть бургер</button>
       <ul class="burger-menu__list">
-        <li><p class="burger-menu__item">Главная</p></li>
+        <li><a class="burger-menu__item">Главная</a></li>
         <li><a class="burger-menu__item" href="photo.html">Фото и видео</a></li>
         <li><a class="burger-menu__item" href="form.html">Форма отзыва</a></li>
         <li><a class="burger-menu__item" href="https://htmlacademy.ru/" target="blank">Html academy</a></li>
       </ul>
     </section>
     <section class="head-wrapper">
-      <p class="logo head-wrapper__logo"><img src="http://placehold.it/150x100" alt="заглушка">Лого</p>
+      <img class="logo head-wrapper__logo" src="http://placehold.it/150x100" alt="заглушка">
       <button class="head-wrapper__burger">Бургер</button>
     </section>
   </header>
 
   <main>
-    <article class="kv">
+    <h1 class="visualy-hidden">Главная страница</h1>
+
+    <article class="key-visual">
       <img src="http://placehold.it/150x100" alt="заглушка">
     </article>
 
@@ -45,24 +47,24 @@
         <div class="advantage__photo">
           <img src="http://placehold.it/150x100" alt="заглушка">
         </div>
-
-        <div class="advantage__list">
-          <ul>
-            <li>
-              <h2>Жилье</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li>
-              <h2>Сувениры</h2>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-            <li>
-              <h2>Еда</h2>
-              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-            </li>
-          </ul>
-        </div>
       </section>
+
+      <div class="advantages__item advantage-list">
+        <ul>
+          <li>
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li>
+            <h2>Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+          <li>
+            <h2>Еда</h2>
+            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+        </ul>
+      </div>
 
       <section class="advantages__item advantage">
         <div class="advantage__title-wrap advantage--blue">
@@ -104,7 +106,7 @@
     <section class="find">
       <h2 class="find__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p class="find__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="find__btn">НАЙТИ гостиницу</button>
+      <a class="find__btn" href="">НАЙТИ гостиницу</a>
     </section>
 
     <section class="map">
@@ -112,7 +114,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <h2 class="footer__hashtag"><a href="#">#visitSEDONA</a></h2>
 
     <ul class="footer__social social">
@@ -121,7 +123,7 @@
       <li class="social__item"><a href=""></a></li>
     </ul>
 
-    <p class="footer__copyright">Разработано</p>
+    <a class="footer__copyright" href="https://htmlacademy.ru/" target="blank">Разработано</a>
   </footer>
 
 </body>
