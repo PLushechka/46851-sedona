@@ -1,9 +1,11 @@
-.page-title { position: relative; padding: 35px 20px 40px; }
+.page-title {
+  position: relative; padding: 35px 20px 40px;
+}
 
 .page-title--index {
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 50%;
@@ -12,8 +14,13 @@
     box-sizing: border-box;
   }
 
-  &::before { left: 0; border-bottom: 16px solid @color-sedona; border-right: 50vw solid transparent; }
-  &::after { right: 0; border-bottom: 16px solid @color-sedona; border-left: 50vw solid transparent; }
+  &::before {
+    left: 0; border-bottom: 16px solid @color-sedona; border-right: 50vw solid transparent;
+  }
+
+  &::after {
+    right: 0; border-bottom: 16px solid @color-sedona; border-left: 50vw solid transparent;
+  }
 }
 
 .page-title__topic {

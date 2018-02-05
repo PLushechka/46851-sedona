@@ -1,9 +1,10 @@
 .key-visual {
   position: relative;
   background: #e1eff8 url("../img/bg-back-mobile@1x.jpg") no-repeat 50%/cover;
+
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 50%;
@@ -12,8 +13,13 @@
     box-sizing: border-box;
   }
 
-  &::before { left: 0; border-bottom: 26px solid #ffffff; border-right: 50vw solid transparent; }
-  &::after { right: 0; border-bottom: 26px solid #ffffff; border-left: 50vw solid transparent; }
+  &::before {
+    left: 0; border-bottom: 26px solid #ffffff; border-right: 50vw solid transparent;
+  }
+
+  &::after {
+    right: 0; border-bottom: 26px solid #ffffff; border-left: 50vw solid transparent;
+  }
 }
 
 .key-visual img {

@@ -1,13 +1,13 @@
 .main-form__name {
   position: relative;
   margin: 0;
-  padding: 0px 20px 25px;
+  padding: 0 20px 25px;
   width: 100%;
   border: 0;
   box-sizing: border-box;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;
@@ -59,13 +59,13 @@
 .main-form__contacts {
   position: relative;
   margin: 0;
-  padding: 0px 20px 25px;
+  padding: 0 20px 25px;
   width: 100%;
   border: 0;
   box-sizing: border-box;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;
@@ -116,28 +116,33 @@
 }
 
 .fieldset-contacts__input span {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background: #e6e6e6;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background: #e6e6e6;
 }
 
-.fieldset-contacts__input--phone span { background: #e6e6e6 url('../img/icon-phone.svg') no-repeat 50%; }
-.fieldset-contacts__input--email span { background: #e6e6e6 url('../img/icon-mail.svg')  no-repeat 50%; }
+.fieldset-contacts__input--phone span {
+  background: #e6e6e6 url('../img/icon-phone.svg') no-repeat 50%;
+}
+
+.fieldset-contacts__input--email span {
+  background: #e6e6e6 url('../img/icon-mail.svg')  no-repeat 50%;
+}
 
 .main-form__opinion {
   position: relative;
   margin: 0;
-  padding: 0px 20px 25px;
+  padding: 0 20px 25px;
   width: 100%;
   border: 0;
   box-sizing: border-box;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;
@@ -171,7 +176,7 @@
 .fieldset-opinion__input input {
   display: none;
 
-  &:checked + span:before {
+  &::checked + span::before {
     width: 22px;
     height: 22px;
     background: #333333;
@@ -187,19 +192,18 @@
   background: #f2f2f2;
   border-radius: 50%;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     background: transparent;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s;
+    transition: 0.3s;
   }
-
 }
 
 .fieldset-opinion__label p {
@@ -213,13 +217,13 @@
 .main-form__visit {
   position: relative;
   margin: 0;
-  padding: 0px 20px 25px;
+  padding: 0 20px 25px;
   width: 100%;
   border: 0;
   box-sizing: border-box;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;
@@ -253,10 +257,10 @@
 .fieldset-visit__input input {
   display: none;
 
-  &:checked + span:before {
+  &::checked + span::before {
     width: 24px;
     height: 16px;
-    background: url('../img/icon-tick.svg') no-repeat 50%;
+    background: url("../img/icon-tick.svg") no-repeat 50%;
   }
 }
 
@@ -269,19 +273,18 @@
   background: #f2f2f2;
   border-radius: 5px;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     background: transparent;
     border-radius: 5px;
     transform: translate(-50%, -50%);
-    transition: .3s;
+    transition: 0.3s;
   }
-
 }
 
 .fieldset-visit__label p {
@@ -295,13 +298,13 @@
 .main-form__emotions {
   position: relative;
   margin: 0 0 25px;
-  padding: 0px 20px 25px;
+  padding: 0 20px 25px;
   width: 100%;
   border: 0;
   box-sizing: border-box;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;

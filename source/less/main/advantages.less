@@ -11,12 +11,12 @@
 
 .advantage__info-wrap--grey {
   position: relative;
-  padding: 24px 0px 27px;
+  padding: 24px 0 27px;
   color: #333333;
   background: #eeeeee;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -28,7 +28,7 @@
 
 .advantage__topic {
   margin: 0 0 10px;
-  padding: 0 0px;
+  padding: 0;
   color: inherit;
   .text-bold();
   text-align: center;
@@ -42,12 +42,16 @@
 }
 
 .advantage__text {
-  margin: 0 0 0px;
+  margin: 0;
   color: inherit;
   .text-regular();
   text-align: center;
 }
 
-.advantage__photo { width: 100%; }
+.advantage__photo {
+  width: 100%;
+}
 
-.advantage__photo img { display: block; }
+.advantage__photo img {
+  display: block;
+}
