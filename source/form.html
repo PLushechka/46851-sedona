@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sedona</title>
 </head>
 <body>
 
   <header>
-    <section class="burger-menu">
-      <button class="burger-menu__close">закрыть бургер</button>
+    <section class="burger-menu open">
+      <button type="button" class="burger-menu__close">закрыть бургер</button>
       <ul class="burger-menu__list">
         <li><a class="burger-menu__item" href="index.html">Главная</a></li>
         <li><a class="burger-menu__item" href="photo.html">Фото и видео</a></li>
@@ -18,17 +19,18 @@
         <li><a class="burger-menu__item" href="https://htmlacademy.ru/" target="blank">Html academy</a></li>
       </ul>
     </section>
+
     <section class="head-wrapper">
-      <img class="logo head-wrapper__logo" src="http://placehold.it/150x100" alt="заглушка">
-      <button class="head-wrapper__burger">Бургер</button>
+      <img class="logo head-wrapper__logo" src="img/logo-sedona-mobile.svg" alt="Логотип" width="101" height="83">
+      <button type="button" class="head-wrapper__burger">Бургер</button>
     </section>
   </header>
 
   <main>
     <h1 class="visualy-hidden">Оставить отзыв</h1>
 
-    <article class="key-visual">
-      <img src="http://placehold.it/150x100" alt="заглушка">
+    <article class="key-visual key-visual--form">
+      <img src="img/text-sedona.svg" alt="Главный логотип" width="229" height="40">
     </article>
 
     <section class="page-title">
@@ -37,7 +39,7 @@
     </section>
 
     <section class="form-wrapper"><!-- START form-wrapper -->
-      <form class="form-wrapper__form main-form" action="https://echo.htmlacademy.ru" action="post">
+      <form class="form-wrapper__form main-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="main-form__name fieldset-name">
           <legend>Представьтесь:</legend>
           <label class="fieldset-name__label" for="name">
@@ -58,26 +60,41 @@
           <legend>Контактная информация:</legend>
           <label class="fieldset-contacts__label" for="phone">
             <p>Контактный телефон*:</p>
-            <input class="fieldset-contacts__input" type="tel" name="phone" id="phone">
+            <span class="fieldset-contacts__input fieldset-contacts__input--phone">
+              <input type="tel" name="phone" id="phone">
+              <span></span>
+            </span>
           </label>
           <label class="fieldset-contacts__label" for="email">
             <p>Электронная почта*:</p>
-            <input class="fieldset-contacts__input" type="email" name="email" id="email">
+            <span class="fieldset-contacts__input fieldset-contacts__input--email">
+              <input type="email" name="email" id="email">
+              <span></span>
+            </span>
           </label>
         </fieldset>
 
         <fieldset class="main-form__opinion fieldset-opinion">
-          <legend>ВАше Общее впечатление:</legend>
+          <legend>Ваше Общее впечатление:</legend>
           <label class="fieldset-opinion__label" for="opinion-plus">
-            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-plus" value="opinion" checked>
+            <span class="fieldset-opinion__input">
+              <input type="radio" name="opinion" id="opinion-plus" value="opinion" checked>
+              <span></span>
+            </span>
             <p>Скорее положительное</p>
           </label>
           <label class="fieldset-opinion__label" for="opinion-menus">
-            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-menus" value="opinion">
+            <span class="fieldset-opinion__input">
+              <input type="radio" name="opinion" id="opinion-menus" value="opinion">
+              <span></span>
+            </span>
             <p>Скорее отрицательное</p>
           </label>
           <label class="fieldset-opinion__label" for="opinion-soso">
-            <input class="fieldset-opinion__input" type="radio" name="opinion" id="opinion-soso" value="opinion">
+            <span class="fieldset-opinion__input">
+              <input type="radio" name="opinion" id="opinion-soso" value="opinion">
+              <span></span>
+            </span>
             <p>Затрудняюсь ответить</p>
           </label>
         </fieldset>
@@ -85,19 +102,31 @@
         <fieldset class="main-form__visit fieldset-visit">
           <legend>посещенные достопримечательности:</legend>
           <label class="fieldset-visit__label" for="visit-bridge">
-            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-bridge" value="bridge">
+            <span class="fieldset-visit__input">
+              <input type="checkbox" name="visit" id="visit-bridge" value="bridge">
+              <span></span>
+            </span>
             <p>Мост Дьявола</p>
           </label>
           <label class="fieldset-visit__label" for="visit-park">
-            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-park" value="park">
+            <span class="fieldset-visit__input">
+              <input type="checkbox" name="visit" id="visit-park" value="park">
+              <span></span>
+            </span>
             <p>Слайд-парк</p>
           </label>
           <label class="fieldset-visit__label" for="visit-mountain">
-            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-mountain" value="mountain">
+            <span class="fieldset-visit__input">
+              <input type="checkbox" name="visit" id="visit-mountain" value="mountain">
+              <span></span>
+            </span>
             <p>Гора-Колокол</p>
           </label>
           <label class="fieldset-visit__label" for="visit-rock">
-            <input class="fieldset-visit__input" type="checkbox" name="visit" id="visit-rock" value="rock">
+            <span class="fieldset-visit__input">
+              <input type="checkbox" name="visit" id="visit-rock" value="rock">
+              <span></span>
+            </span>
             <p>Красные скалы</p>
           </label>
         </fieldset>
@@ -114,12 +143,12 @@
   </main>
 
   <footer class="footer">
-    <h2 class="footer__hashtag"><a href="#">#visitSEDONA</a></h2>
+    <a class="footer__hashtag" href="#">#visitSEDONA</a>
 
     <ul class="footer__social social">
-      <li class="social__item"><a href=""></a></li>
-      <li class="social__item"><a href=""></a></li>
-      <li class="social__item"><a href=""></a></li>
+      <li class="social__item social__item--tw"><a href=""></a></li>
+      <li class="social__item social__item--fb"><a href=""></a></li>
+      <li class="social__item social__item--yt"><a href=""></a></li>
     </ul>
 
     <a class="footer__copyright" href="https://htmlacademy.ru/" target="blank">Разработано</a>

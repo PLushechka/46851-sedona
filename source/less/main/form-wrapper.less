@@ -1,0 +1,340 @@
+.main-form__name {
+  position: relative;
+  margin: 0;
+  padding: 0px 20px 25px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.main-form__name legend {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  text-transform: uppercase;
+}
+
+.fieldset-name__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fieldset-name__label p {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: #333333;
+  font: 14px/26px @pt-sans-regular;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.fieldset-name__input {
+  display: inline-block;
+  flex-grow: 1;
+  padding: 0 22px;
+  width: 100%;
+  height: 58px;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  vertical-align: middle;
+  background: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.main-form__contacts {
+  position: relative;
+  margin: 0;
+  padding: 0px 20px 25px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.main-form__contacts legend {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  text-transform: uppercase;
+}
+
+.fieldset-contacts__label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.fieldset-contacts__label p {
+  display: block;
+  margin: 0 0 10px;
+  padding-left: 22px;
+  color: #333333;
+  font: 14px/26px @pt-sans-regular;
+  text-transform: uppercase;
+}
+
+.fieldset-contacts__input {
+  display: block;
+  position: relative;
+}
+
+.fieldset-contacts__input input {
+  padding: 0 80px 0 22px;
+  width: 100%;
+  height: 58px;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  vertical-align: middle;
+  background: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.fieldset-contacts__input span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+}
+
+.fieldset-contacts__input--phone span { background: #e6e6e6 url('../img/icon-phone.svg') no-repeat 50%; }
+.fieldset-contacts__input--email span { background: #e6e6e6 url('../img/icon-mail.svg')  no-repeat 50%; }
+
+.main-form__opinion {
+  position: relative;
+  margin: 0;
+  padding: 0px 20px 25px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.main-form__opinion legend {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  text-transform: uppercase;
+}
+
+.fieldset-opinion__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.fieldset-opinion__input {
+  display: block;
+}
+
+.fieldset-opinion__input input {
+  display: none;
+
+  &:checked + span:before {
+    width: 22px;
+    height: 22px;
+    background: #333333;
+  }
+}
+
+.fieldset-opinion__input span {
+  display: block;
+  position: relative;
+  margin-right: 23px;
+  width: 56px;
+  height: 56px;
+  background: #f2f2f2;
+  border-radius: 50%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+  }
+
+}
+
+.fieldset-opinion__label p {
+  display: block;
+  flex-grow: 1;
+  margin: 0;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+}
+
+.main-form__visit {
+  position: relative;
+  margin: 0;
+  padding: 0px 20px 25px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.main-form__visit legend {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  text-transform: uppercase;
+}
+
+.fieldset-visit__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.fieldset-visit__input {
+  display: block;
+}
+
+.fieldset-visit__input input {
+  display: none;
+
+  &:checked + span:before {
+    width: 24px;
+    height: 16px;
+    background: url('../img/icon-tick.svg') no-repeat 50%;
+  }
+}
+
+.fieldset-visit__input span {
+  display: block;
+  position: relative;
+  margin-right: 23px;
+  width: 56px;
+  height: 56px;
+  background: #f2f2f2;
+  border-radius: 5px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+  }
+
+}
+
+.fieldset-visit__label p {
+  display: block;
+  flex-grow: 1;
+  margin: 0;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+}
+
+.main-form__emotions {
+  position: relative;
+  margin: 0 0 25px;
+  padding: 0px 20px 25px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.main-form__emotions legend {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  text-transform: uppercase;
+}
+
+.fieldset-emotions__input {
+  display: inline-block;
+  flex-grow: 1;
+  padding: 15px 20px;
+  width: 100%;
+  height: 160px;
+  color: #000000;
+  font: 18px/26px @pt-sans-bold;
+  vertical-align: middle;
+  background: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.main-form__submit {
+  .btn(block; 280px; #fff; @color-sedona);
+  margin: 0 auto;
+}

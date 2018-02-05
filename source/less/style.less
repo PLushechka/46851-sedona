@@ -1,9 +1,24 @@
-@import "block.less";
+// COMMON
+@import "fonts.less";
+@import "variables.less";
+@import "mixins.less";
+@import "global.less";
 
-@zaika: #f70;
+// HEADER
+@import "header/burger-menu.less";
+@import "header/head-wrapper.less";
 
-.zhopa() {
-  background: @zaika;
-}
+//MAIN
+@import "main/key-visual.less";
+@import "main/page-title.less";
+@import "main/advantages.less";
+@import "main/advantage-list.less";
+@import "main/find.less";
+@import "main/map.less";
+@import "main/photo-block.less";
+@import "main/video.less";
+@import "main/form-wrapper.less";
 
-body { .zhopa() }
+//FOOTER
+@import "footer/footer.less";
+@import "footer/social.less";

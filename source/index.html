@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sedona</title>
 </head>
 <body>
 
   <header>
-    <section class="burger-menu">
-      <button class="burger-menu__close">закрыть бургер</button>
+    <section class="burger-menu open">
+      <button type="button" class="burger-menu__close">закрыть бургер</button>
       <ul class="burger-menu__list">
         <li><a class="burger-menu__item">Главная</a></li>
         <li><a class="burger-menu__item" href="photo.html">Фото и видео</a></li>
@@ -18,17 +19,18 @@
         <li><a class="burger-menu__item" href="https://htmlacademy.ru/" target="blank">Html academy</a></li>
       </ul>
     </section>
+
     <section class="head-wrapper">
-      <img class="logo head-wrapper__logo" src="http://placehold.it/150x100" alt="заглушка">
-      <button class="head-wrapper__burger">Бургер</button>
+      <img class="logo head-wrapper__logo" src="img/logo-sedona-mobile.svg" alt="Логотип" width="101" height="83">
+      <button type="button" class="head-wrapper__burger">Бургер</button>
     </section>
   </header>
 
   <main>
     <h1 class="visualy-hidden">Главная страница</h1>
 
-    <article class="key-visual">
-      <img src="http://placehold.it/150x100" alt="заглушка">
+    <article class="key-visual key-visual--index">
+      <img src="img/text-sedona-index.svg" alt="Главный логотип" width="280" height="213">
     </article>
 
     <section class="page-title page-title--index">
@@ -38,64 +40,64 @@
 
     <article class="advantages">
       <section class="advantages__item advantage">
-        <div class="advantage__title-wrap advantage--blue">
+        <div class="advantage__info-wrap advantage__info-wrap--blue">
           <h2 class="advantage__topic">НАСТОЯЩИЙ ГОРОДОК</h2>
           <p class="advantage__number">— №1 —</p>
           <p class="advantage__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
 
         <div class="advantage__photo">
-          <img src="http://placehold.it/150x100" alt="заглушка">
+          <img src="img/main-city-mobile@1x.jpg" alt="Город" width="320" height="260">
         </div>
       </section>
 
       <div class="advantages__item advantage-list">
         <ul>
-          <li>
-            <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <li class="advantage-list__item">
+            <h2 class="advantage-list__title advantage-list__title--house">Жилье</h2>
+            <p class="advantage-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li>
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+          <li class="advantage-list__item">
+            <h2 class="advantage-list__title advantage-list__title--gift">Сувениры</h2>
+            <p class="advantage-list__text">Не только китайского, но и местного производства!</p>
           </li>
-          <li>
-            <h2>Еда</h2>
-            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <li class="advantage-list__item">
+            <h2 class="advantage-list__title advantage-list__title--burger">Еда</h2>
+            <p class="advantage-list__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
         </ul>
       </div>
 
       <section class="advantages__item advantage">
-        <div class="advantage__title-wrap advantage--blue">
+        <div class="advantage__info-wrap advantage__info-wrap--blue">
           <h2 class="advantage__topic">ТАМ ЕСТЬ Мост дьявола</h2>
           <p class="advantage__number">— №2 —</p>
           <p class="advantage__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
 
         <div class="advantage__photo">
-          <img src="http://placehold.it/150x100" alt="заглушка">
+          <img src="img/main-bridge-mobile@1x.jpg" alt="Каньон" width="320" height="260">
         </div>
       </section>
 
-      <section class="advantages__item advantage">
-        <div class="advantage__title-wrap">
+      <section class="advantages__item advantage advantage--grey">
+        <div class="advantage__info-wrap advantage__info-wrap--grey">
           <h2 class="advantage__topic">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
           <p class="advantage__number">— №3 —</p>
           <p class="advantage__text">ВСЕ интересные места находятся очень близко</p>
         </div>
       </section>
 
-      <section class="advantages__item advantage">
-        <div class="advantage__title-wrap">
+      <section class="advantages__item advantage advantage--grey">
+        <div class="advantage__info-wrap advantage__info-wrap--grey">
           <h2 class="advantage__topic">КРАСИВАЯ ДОРОГА</h2>
           <p class="advantage__number">— №4 —</p>
           <p class="advantage__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
         </div>
       </section>
 
-      <section class="advantages__item advantage">
-        <div class="advantage__title-wrap">
+      <section class="advantages__item advantage advantage--grey">
+        <div class="advantage__info-wrap advantage__info-wrap--grey">
           <h2 class="advantage__topic">МАЛО ТУРИСТОВ</h2>
           <p class="advantage__number">— №5 —</p>
           <p class="advantage__text">Большинство едет в гранд каньон и толпится там</p>
@@ -110,17 +112,17 @@
     </section>
 
     <section class="map">
-      <img src="http://placehold.it/150x100" alt="заглушка">
+      <img src="img/bg-map-mobile@1x.jpg" alt="Карта">
     </section>
   </main>
 
   <footer class="footer">
-    <h2 class="footer__hashtag"><a href="#">#visitSEDONA</a></h2>
+    <a class="footer__hashtag" href="#">#visitSEDONA</a>
 
     <ul class="footer__social social">
-      <li class="social__item"><a href=""></a></li>
-      <li class="social__item"><a href=""></a></li>
-      <li class="social__item"><a href=""></a></li>
+      <li class="social__item social__item--tw"><a href=""></a></li>
+      <li class="social__item social__item--fb"><a href=""></a></li>
+      <li class="social__item social__item--yt"><a href=""></a></li>
     </ul>
 
     <a class="footer__copyright" href="https://htmlacademy.ru/" target="blank">Разработано</a>
