@@ -17,13 +17,13 @@
 
   &::before {
     left: 0;
-    border-bottom: 16px solid @color-sedona;
+    border-bottom: 16px solid @color-blue;
     border-right: 50vw solid transparent;
   }
 
   &::after {
     right: 0;
-    border-bottom: 16px solid @color-sedona;
+    border-bottom: 16px solid @color-blue;
     border-left: 50vw solid transparent;
   }
 }
@@ -32,7 +32,8 @@
   margin: 0 0 25px;
   padding: 0 5px;
   color: #000000;
-  font: 18px/26px @pt-sans-bold;
+  font: 18px/26px @default-font;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -41,7 +42,8 @@
   margin: 0;
   padding: 0 5px;
   color: #333333;
-  font: 14px/26px @pt-sans-regular;
+  font: 14px/26px @default-font;
+  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
 }

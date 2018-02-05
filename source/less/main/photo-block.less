@@ -1,7 +1,3 @@
-.gallery__block:first-child {
-  border-top: 1px solid #e5e5e5;
-}
-
 .photo-block {
   margin: 0;
   padding: 22px 20px 15px;
@@ -19,14 +15,16 @@
 .photo-block__title {
   margin: 0;
   color: #000000;
-  font: 14px/24px @pt-sans-bold;
+  font: 14px/24px @default-font;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .photo-block__author {
   margin: 0;
   color: #333333;
-  font: 14px/24px @pt-sans-regular;
+  font: 14px/24px @default-font;
+  font-weight: normal;
 }
 
 .photo-block__likes {
@@ -48,7 +46,8 @@
   & b {
     display: inline-block;
     color: #000000;
-    font: 14px/24px @pt-sans-bold;
+    font: 14px/24px @default-font;
+    font-weight: bold;
     vertical-align: top;
   }
 }
