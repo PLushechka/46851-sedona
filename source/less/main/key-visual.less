@@ -1,38 +1,83 @@
 .key-visual {
   position: relative;
   background: #e1eff8 url("../img/bg-back-mobile@1x.jpg") no-repeat 50%/cover;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 26px;
-    background: transparent;
-    box-sizing: border-box;
-  }
-
-  &::before {
-    left: 0;
-    border-bottom: 26px solid #ffffff;
-    border-right: 50vw solid transparent;
-  }
-
-  &::after {
-    right: 0;
-    border-bottom: 26px solid #ffffff;
-    border-left: 50vw solid transparent;
-  }
 }
 
 .key-visual img {
   display: block;
+  margin: 0 auto;
   width: 100%;
+
+  @media (min-width: @tablet) {
+    width: 460px;
+  }
+}
+
+.key-visual__decorate {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 26px;
+  background: transparent;
+  box-sizing: border-box;
+
+  &:nth-of-type(1) {
+    left: 0;
+    border-bottom: 26px solid @color-white;
+    border-right: 50vw solid transparent;
+
+    @media (min-width: @tablet) {
+      border-bottom-width: 37px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 3vw;
+        width: 47vw;
+        height: 57px;
+        background: transparent;
+        border-bottom: 57px solid @color-white;
+        border-right: 47vw solid transparent;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    right: 0;
+    border-bottom: 26px solid @color-white;
+    border-left: 50vw solid transparent;
+
+    @media (min-width: @tablet) {
+      border-bottom-width: 37px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 3vw;
+        width: 47vw;
+        height: 57px;
+        background: transparent;
+        border-bottom: 57px solid @color-white;
+        border-left: 47vw solid transparent;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  @media (min-width: @tablet) {
+    height: 57px;
+  }
 }
 
 .key-visual--index {
   padding: 90px 20px 82px;
+
+  @media (min-width: @tablet) {
+    padding: 77px 0 91px;
+  }
 }
 
 .key-visual--photo {
