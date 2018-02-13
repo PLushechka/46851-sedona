@@ -1,0 +1,49 @@
+.page-title {
+  position: relative;
+  padding: 35px 20px 40px;
+}
+
+.page-title--index {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 26px;
+    background: transparent;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    left: 0;
+    border-bottom: 16px solid @color-blue;
+    border-right: 50vw solid transparent;
+  }
+
+  &::after {
+    right: 0;
+    border-bottom: 16px solid @color-blue;
+    border-left: 50vw solid transparent;
+  }
+}
+
+.page-title__topic {
+  margin: 0 0 25px;
+  padding: 0 5px;
+  color: #000000;
+  font: 18px/26px @default-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-title__text {
+  margin: 0;
+  padding: 0 5px;
+  color: #333333;
+  font: 14px/26px @default-font;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}

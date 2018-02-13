@@ -1,0 +1,31 @@
+.burger-menu {
+  position: relative;
+  background: @color-blue;
+}
+
+.burger-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.burger-menu__item {
+  display: block;
+  padding: 7px 0;
+  color: @color-white;
+  font: 18px/40px @default-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #678fa8;
+}
+
+li:first-child .burger-menu__item {
+  border-top: 0;
+}
+
+li:last-child .burger-menu__item {
+  border-bottom: 0;
+}

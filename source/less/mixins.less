@@ -1,0 +1,26 @@
+.text-bold() {
+  font: 18px/26px @default-font;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-regular() {
+  font: 14px/21px @default-font;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.btn(@display; @width; @color; @color-bg) {
+  display: @display;
+  width: @width;
+  height: 58px;
+  color: @color;
+  text-align: center;
+  font: 21px/26px @default-font;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: @color-bg;
+  border: 0;
+  box-sizing: border-box;
+}

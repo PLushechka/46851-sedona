@@ -1,0 +1,44 @@
+.key-visual {
+  position: relative;
+  background: #e1eff8 url("../img/bg-back-mobile@1x.jpg") no-repeat 50%/cover;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 26px;
+    background: transparent;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    left: 0;
+    border-bottom: 26px solid #ffffff;
+    border-right: 50vw solid transparent;
+  }
+
+  &::after {
+    right: 0;
+    border-bottom: 26px solid #ffffff;
+    border-left: 50vw solid transparent;
+  }
+}
+
+.key-visual img {
+  display: block;
+  width: 100%;
+}
+
+.key-visual--index {
+  padding: 90px 20px 82px;
+}
+
+.key-visual--photo {
+  padding: 51px 45px 67px;
+}
+
+.key-visual--form {
+  padding: 51px 45px 67px;
+}
