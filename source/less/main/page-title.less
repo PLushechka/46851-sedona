@@ -1,6 +1,10 @@
 .page-title {
   position: relative;
   padding: 35px 20px 40px;
+
+  @media (min-width: @tablet) {
+    padding: 45px 130px;
+  }
 }
 
 .page-title--index {
@@ -13,6 +17,10 @@
     height: 26px;
     background: transparent;
     box-sizing: border-box;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
   }
 
   &::before {
@@ -36,6 +44,10 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+  }
 }
 
 .page-title__text {
